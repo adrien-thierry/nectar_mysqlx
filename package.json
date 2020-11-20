@@ -1,0 +1,43 @@
+{
+  "name": "mysqlx",
+  "description": "NectarJS mysqlx module",
+  "main": "index.js",
+  "bugs":
+  {
+    "url": "https://github.com/adrien-thierry/nectar_mysqlx/issues"
+  },
+
+  "directories":
+  {
+    "root": ".",
+    "lib": "lib"
+  },
+  "homepage": "https://github.com/adrien-thierry/nectar_mysqlx#readme",
+  "keywords":
+  [
+    "nectarjs",
+  "javascript",
+  "mysql",
+  "mysqlx"
+  ],
+  "license": "GPL-3.0-or-later",
+  "licenses": [
+    {
+      "type": "GPL",
+      "url": "https://github.com/adrien-thierry/nectar_mysqlx/blob/master/LICENSE"
+    }
+  ],
+  "repository":
+  {
+    "type": "git",
+    "url": "git+ssh://git@github.com/adrien-thierry/nectar_mysqlx.git"
+  },
+  "version": "0.0.1",
+  "nectar":
+  {
+    "env": ["std", "android", "ios", "node", "wasm", "test"],
+    "read_only": [],
+    "expose": ["__NJS_NATIVE_CONNECT_MYSQL"],
+    "lib": ["-I/usr/include/mysql-cppconn-8", "-lmysqlcppconn8"]
+  }
+}
